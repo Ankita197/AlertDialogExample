@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_support"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="simple" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select options" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select any one option" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button4"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="authenticate with password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
